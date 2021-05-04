@@ -52,12 +52,16 @@ return(
 <input type="text" placeholder="new todo"   onChange={(e)=>setEditText(e.target.value)} value={editText} />
     ):
     ( <div >{todo.text}</div>)}
-      <button className="delete-btn" onClick={()=>DeleteTodo(todo.id)}>Delete</button>
+      <button className="delete-btn" onClick={()=>DeleteTodo(todo.id)}>
+      Delete</button>
      
    {editTodo===todo.id?
-   <button className="save-btn" onClick={()=>EditTodo(todo.id)}>Save</button>:
-   <button className="edit-btn" onClick={()=>setEditTodo(todo.id)}>Edit</button>}
-    <hr style={{backgroundColor:"black", width:"50%"}}></hr>
+   <button className="save-btn" onClick={()=>EditTodo(todo.id)}>
+     Save
+   </button>:
+   <button className="edit-btn" onClick={()=>setEditTodo(todo.id)}>
+    Edit</button>}
+    
   </div>
 )}
 </div>

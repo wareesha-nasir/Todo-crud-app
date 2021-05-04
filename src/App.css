@@ -1,25 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 .App {
   align-items: center;
   justify-content: center;
   display: flex;
   width: 100%;
-  height: 100vh;
+ min-height: 100vh;
+  background-color: teal;
 }
 
 .container{
 background-color: #7c045e;
 box-sizing: border-box;
 min-width: 450px;
-min-height: 400px;
+min-height: 500px;
 border-radius:10px;
-padding: 30px;
+padding: 20px;
 align-items: center;
 text-align: center;
+box-shadow: 3px 4px 40px #7c045e;
 }
 
 .add-btn{
-  border-radius: 4rem;
-  background-color: rgb(226, 198, 43);
+  border-radius: 10px;
+  background-color: rgb(141, 122, 15);
   margin-left: 10px;
   padding: 5px;
   text-transform: uppercase;
@@ -27,41 +33,48 @@ text-align: center;
   color: white;
 }
 .delete-btn{
-  border-radius: 4rem;
-  background-color: rgb(243, 18, 18);
-  margin-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(172, 9, 9);
+  display: block;
   padding: 5px;
   text-transform: uppercase;
   font-size: 15px;
   color: white;
-  margin-top: 10px;
+ margin-left: auto;
+  margin-right: 5px;
 }
 .save-btn{
-  border-radius: 4rem;
-  background-color: rgb(8, 69, 199);
-  margin-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(11, 97, 131);
+  margin-left: 7px;
   padding: 5px;
   text-transform: uppercase;
   font-size: 15px;
   color: white;
-  margin-top: 10px;
+
 }
 .edit-btn{
-  border-radius: 4rem;
-  background-color: rgb(9, 129, 69);
-  margin-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(9, 129, 89);
+  justify-content: flex-end;
   padding: 5px;
   text-transform: uppercase;
   font-size: 15px;
   color: white;
-  margin-top: 10px;
+  margin-left: 7px;
+ 
 }
 input{
-  border-radius: 4rem;
+  border-radius: 10px;
   background-color: white;
   color: black;
-  height: 30px;
+  width: 200px;
   border:1px solid black;
+  outline: none;
+  padding: 15px;
+}
+input:focus{
+  outline: none;
 }
 
 
@@ -71,14 +84,17 @@ input{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
- 
+  margin: 20px 0;
 }
-h3{
-  background-color: #7c045e !important;
-  border-radius: 4rem;
-}
+
 .todo-list{
-  padding: 10px;
+  display: flex;
+  padding: 15px;
+color: white;
+border: 1px solid rgb(189, 184, 184);
+border-radius: 10px;
+max-height: 30px;
+margin: 20px 0;
 
 }
 
